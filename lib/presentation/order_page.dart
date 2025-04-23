@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:play_navigation/presentation/order_detail_page.dart';
 class OrderPage extends StatefulWidget {
   const OrderPage({super.key});
 
@@ -74,6 +74,28 @@ class _OrderPageState extends State<OrderPage> {
                 }
                 return null;
               },
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                if (_formkey.currentState!.validate()) {
+                  calculateTotalPrice();
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder:
+                          (context) => OrderDetailPage(
+                            jumlahMakanan: jumlahmakananController.text,
+                            jumlahMinuman: jumlahminumanController.text,
+                            makanan: makananController.text,
+                            minuman: minumanController.text,
+                            totalHarga: totalHarga,
+                          ),
+                    ),
+                  );
+                }
+              },
+              child: Text('Order Now'),
             ),
           ],
         )
