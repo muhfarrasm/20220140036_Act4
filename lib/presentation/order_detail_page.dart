@@ -25,7 +25,16 @@ class OrderDetailPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [],
+          children: [
+            Text('Food Order: $makanan'),
+            Text('Drink Order: $minuman'),
+            Text('Food QTY Order: $jumlahMakanan'),
+            Text('Drink QTY Order: $jumlahMinuman'),
+            Text('Total Price: $totalHarga'),
+
+            
+
+          ],
         )
       )
     )
