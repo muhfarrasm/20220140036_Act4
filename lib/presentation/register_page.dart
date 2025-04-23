@@ -36,17 +36,16 @@ class _RegisterPageState extends State<RegisterPage> {
           ),
 
           TextFormField(
-  controller: passwordController,
-  decoration: const InputDecoration(labelText: 'Password'),
-  obscureText: true,
-  validator: (value){
-    if (value == null || value.isEmpty){
-      return 'Please enter your password';
-    }
-    return null;
-  },
-),
-
+            controller: passwordController,
+            decoration: const InputDecoration(labelText: 'Password'),
+            obscureText: true,
+            validator: (value){
+              if (value == null || value.isEmpty){
+                return 'Please enter your password';
+              }
+              return null;
+            },
+          ),
 
           ElevatedButton(onPressed: () {}, child: Text('Register')),
           TextButton(
