@@ -14,6 +14,14 @@ class _OrderPageState extends State<OrderPage> {
   final TextEditingController jumlahminumanController = TextEditingController();
   int totalHarga = 0;
 
+  void calculateTotalPrice() {
+    int jumlahmakanan = int.tryParse(jumlahmakananController.text) ?? 0;
+    int jumlahminuman = int.tryParse(jumlahminumanController.text) ?? 0;
+
+    setState((){
+      totalHarga = (jumlahmakanan * 3200) + (jumlahminuman * 5000);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
