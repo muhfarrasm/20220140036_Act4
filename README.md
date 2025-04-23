@@ -1,5 +1,22 @@
 # play_navigation
 
+1. Login Page
+   ![Screenshot_1745415711](https://github.com/user-attachments/assets/691645c7-d652-4711-a4b6-dfb39b7ae4a1)
+   
+2. Register Page
+   ![Screenshot_1745415718](https://github.com/user-attachments/assets/fcfbfb75-6ac4-40f5-ad87-8d99c403a54c)
+
+ 3. Home Page
+    ![Screenshot_1745415731](https://github.com/user-attachments/assets/7ae704ee-a6a1-420f-88cc-f118d6077aac)
+
+4. Order Page
+   ![Screenshot_1745415786](https://github.com/user-attachments/assets/85f67fa5-77a7-48dd-9ece-72010c2ea9f7)
+
+5. Detail Order Page
+   ![Screenshot_1745415791](https://github.com/user-attachments/assets/37f499f7-2ad5-4455-bafd-9b5828239aa5)
+
+ 
+   
 A new Flutter project.
 
 ## Getting Started
