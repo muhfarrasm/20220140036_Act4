@@ -38,6 +38,16 @@ class _LoginPageState extends State<LoginPage> {
                   return null;
                 },
               ),
+              TextFormField(
+                controller: passwordController,
+                decoration: const InputDecoration(labelText: 'Password'),
+                validator: (value) {
+                  if (value == null || value.isEmpty){
+                    return 'Tolong masukkan password kamu';
+                  }
+                  return null;
+                },
+              ),
             ],
           )
         )
